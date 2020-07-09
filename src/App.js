@@ -1,24 +1,25 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import {Link} from 'react-scroll';
+
+import {Route, Switch } from "react-router-dom";
+import Navi from './components/Navi';
+import Landing from './pages/Landing';
+import Skills from './pages/Skills';
+import Projects from './pages/Projects';
+import Contact from './pages/Contact';
+import Experiences from './pages/Experiences';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="portfolio">
+      <Navi/>
+      <Landing/>
+      <Experiences/>
+      <Projects/>
+      <Skills/>
+      <Contact/>
     </div>
   );
 }

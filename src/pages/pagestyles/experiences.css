@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+
+
+@media only screen and (max-width: 400px) {
+    .experiences-subtext{
+        font-size: 24px !important;
+        padding-left: 1.2rem !important;
+    }
+    .experiences-inner{
+display: flex;
+flex-direction: column;    
+align-items: center;
+}
+    }
+@media only screen and (max-width: 650px) {
+.experiences-inner{
+    display: flex;
+    flex-direction: column;    
+    align-items: center;
+    }
+.myresume{
+    width: 100% !important;
+
+}
+.aboutme{
+    width: 100% !important;
+}
+.aboutme-inner{
+margin-left: 0rem !important;
+padding-left: 1.5rem;
+}
+        }
+
+.experiences{
+    padding-top: 1.5rem;
+    overflow-x: hidden;
+    width: 100%;
+    padding-bottom: 3rem;
+
+}
+.experiences-title{
+    transition: .3s ease;
+    letter-spacing: 3px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 3.3rem;
+    font-weight: bold;
+    position: relative;
+padding-top: 2rem;
+padding-bottom: .4rem;
+padding-left: 12vw;
+}
+.experiences-subtext{
+    padding-left: 5rem;
+    font-family: 'Reem Kufi', sans-serif;
+    font-size: 2.3rem ;
+    color: gray;
+}
+.experiences-inner{
+    padding-top: 3.5rem;
+    padding-bottom: 1.5rem;
+    display: flex;
+    width: 100%;
+}
+
+
+.magicwand{
+padding-left: 1rem;
+padding-right: 1rem;
+width: 2rem;}
+.computerlove{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 3rem;
+transform: translateY(1rem);
+}
+.timeline-icons{
+    padding-right: 1rem;
+}
+.cds-icon{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: 2px solid gray;
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+.aboutme{
+    padding-top: 1.8rem;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(96, 97, 96);
+    font-size: 1.2rem;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+
+}
+.aboutme-inner{
+    margin-left: 5rem;
+    margin-bottom: 1rem;
+}
+.myresume{
+    width: 45%;
+}
+
+
+.jobposition{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.3rem;
+    align-items: center;
+    padding-left: 1%;
+    padding-bottom: 1%;
+
+}
+.jobposition-inner{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.jobposition-inner2{
+    color: rgb(110, 108, 108);
+    font-weight: bold;
+    letter-spacing: 1.3px;
+    text-shadow: 2px 2px rgb(228, 222, 222);
+    text-align: center;
+}
+.expContents{
+    color: gray;
+    font-size: 18px;
+    padding-left: 5%;
+}
+
+
+
+.coderschool{
+    border-radius: 10px;
+    margin-bottom: 1rem;
+   padding: .5rem;
+}
+.galeriequynh{
+    border-radius: 10px;
+
+    margin-bottom: 1rem;
+    padding: .5rem;
+
+
+}
+.colory{    
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    padding: .5rem;
+
+
+}
+
+
+
+.fb{
+    padding-left: 6px;
+    background: var(--fbcolor);
+    color: transparent;
+    background-size: 300%;
+    background-clip: text;
+}
+.ins{
+    padding-left: 6px;
+    background: var(--inscolor);
+    color: transparent;
+    background-clip: text;
+
+}
+.yt{
+    padding-left: 6px;
+    background: var(--ytcolor);
+    color: transparent;
+    background-clip: text;
+}
+.mg{
+    background: var(--magiccolor);
+    color: transparent;
+    background-clip: text;
+}

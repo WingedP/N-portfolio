@@ -1,0 +1,142 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+
+
+@media only screen and (max-width: 400px) {
+    .overall{
+        flex-direction: column;
+        align-items: center;
+    }
+    .overall-inner{
+        flex-direction: column;
+        align-items: center;
+    }
+.skillsets{
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.skill-pad{
+    box-shadow: 0px 1px 38px -5px rgb(230, 168, 196);
+    border: 1px solid gray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    padding: .7rem;
+    width: 55% !important;
+    border-radius: 10px;
+    display: flex;
+
+}
+.skillstextitem{
+    width: 60vw !important;
+    justify-content: space-evenly !important;
+}
+
+        }
+
+
+.skills{
+    height: fit-content;
+
+}
+.overall-inner{
+    display: flex;
+    width: 70%;
+    justify-content: space-evenly;
+}
+.skills-subtext-inner{
+    width: 60%;
+    font-size: 1.9rem ;
+
+}
+.final-skillsubtext{
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+width: 100%;
+display: flex;
+justify-content: center;
+}
+.skills-subtext{
+    /* padding-left: 5rem; */
+    font-family: 'Reem Kufi', sans-serif !important;
+    font-size: 2.3rem ;
+    color: gray;
+    text-align: center;
+}
+.overall{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+}
+.skillstextitem{
+    font-family: 'Roboto Slab', serif;
+    font-size: 19px;
+    color: rgb(75, 71, 71);
+    display: flex;
+    width: 15vw;
+    padding-bottom: .6rem;
+    justify-content: center;
+    align-items: center;
+    /* border-radius: 10px; */
+    border-bottom: 1px solid gray;
+}
+
+
+.skill-icons{
+    width: 100px;
+}
+
+.softskill-icons{
+    width: 40px;
+    transform: translateY(1rem);
+    padding-right: .2rem;
+    padding-left: .2rem;
+
+}
+.emo-decor{
+    display: flex;
+    align-items: center;
+    background: red;
+    width: fit-content;
+
+}
+.progressbarz{
+    color: pink;
+}
+
+.CircularProgressbar {
+    width: 12rem;
+}
+.CircularProgressbar-trail{
+    stroke: rgb(236, 230, 230) !important;
+}
+.CircularProgressbar-path{
+    stroke: rgb(240, 122, 148) !important;
+}
+
+.skillicons{
+    font-size: 2.4rem;
+    padding-right: 1.2rem;
+}
+.skillsets{
+    display: flex;
+    justify-content: center;
+    padding-top: 1.4rem;
+    padding-bottom: 1.4rem;
+    
+}
+.skill-pad{
+    box-shadow: 0px 1px 38px -5px rgb(230, 168, 196);
+    border: 1px solid gray;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: .7rem;
+    width: 15%;
+    border-radius: 10px;
+    display: flex;
+
+}
