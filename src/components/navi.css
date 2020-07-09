@@ -1,5 +1,19 @@
 
+@media only screen and (max-width: 400px) {
+    .navi{
+        flex-direction: row !important;
+ background: black;
+ top: 0 !important;
+ height: 10vh !important;
+ width: 100vw !important;
+justify-content: space-evenly;
+align-items: center !important;
+background: linear-gradient(to right, #f1eed6, #d3ebd8);
 
+
+    }
+
+}
 .navi{
     position: absolute;
     position: fixed;

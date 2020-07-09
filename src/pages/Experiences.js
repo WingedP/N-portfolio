@@ -40,7 +40,7 @@ function About(){return(<div className="aboutme">
 </div>
 <div className="aboutme-inner">And after 3 months of programming, it turned out the magic is real: it's called 'hard work'.</div>
 <div className="aboutme-inner">So yeah, programming is pretty cool, and I'm here to learn.</div>
-<div className="aboutme-inner">How far can I go? I don't know, but I'll keep going anyhow.</div>
+<div className="aboutme-inner">How far can I go? I don't know, but I'll keep going anyway.</div>
 
 </div> 
 )
