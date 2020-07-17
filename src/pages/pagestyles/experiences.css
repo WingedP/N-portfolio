@@ -34,7 +34,7 @@ padding-left: 1.5rem;
         }
 
 .experiences{
-    padding-top: 1.5rem;
+    padding-top: 3rem;
     overflow-x: hidden;
     width: 100%;
     padding-bottom: 3rem;
@@ -88,7 +88,7 @@ transform: translateY(1rem);
 }
 
 .aboutme{
-    padding-top: 1.8rem;
+    padding-top: 1.9rem;
     font-family: 'Roboto Slab', serif;
     color: rgb(96, 97, 96);
     font-size: 1.2rem;
@@ -98,7 +98,8 @@ transform: translateY(1rem);
 
 }
 .aboutme-inner{
-    margin-left: 5rem;
+    /* background: red; */
+    margin-left: 5.3rem;
     margin-bottom: 1rem;
 }
 .myresume{
@@ -131,7 +132,8 @@ justify-content: center;
 .expContents{
     color: gray;
     font-size: 18px;
-    padding-left: 5%;
+    padding-left: 9%;
+    padding-right: 5%;
 }
 
 

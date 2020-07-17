@@ -72,12 +72,12 @@ display: none;
 --frontend: linear-gradient(to right, #ff512f, #dd2476);
 --developer:linear-gradient(to right, #232526, #414345);
 
+--chevroncolor: linear-gradient(to bottom, #2b5876, #4e4376);
 --mobilescreen:linear-gradient(45deg, #d89bb8, #846d86, #692994);
 
 --namegradient:linear-gradient(to right, #2b5876, #4e4376);
 --namegradient2:linear-gradient(to right, #606c88, #3f4c6b);
-
-
+--namegradienthover:  linear-gradient(to right, #8ca0cf, #a058bd, #4976dd);
 --projectbtn: linear-gradient(to right, #fcb045, #92c2e2, #b1a1eb, #d89bb8);;
 
 
@@ -203,6 +203,8 @@ position: absolute;
     color: gray;
     
 }
+
+
 
 
 .projects-inner::-webkit-scrollbar{
@@ -386,7 +388,7 @@ color: var(--project-title-color);
 .browser-screen:hover{
     transition: .4s ease;
     transform: scale(1.03);
-    box-shadow: 0px 0px 34px 8px rgba(122,122,122,1);
+    box-shadow: 0px 0px 40px 8px rgb(100, 100, 122);
 }
 .browser-screen{
     transition: .4s ease;

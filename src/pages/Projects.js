@@ -1,6 +1,7 @@
 import React from 'react'
 import './pagestyles/projects.css';
 import {Link} from 'react-scroll';
+import Fade from 'react-reveal/Fade';
 
 import Tilt from 'react-parallax-tilt';
 
@@ -10,20 +11,26 @@ return (<div className="projects">
 
 
 <div>
+<Fade bottom>    
+
 <div className="title">
 <svg className="marker" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
   <path fill="#FA4D56" d="M53.1,-58.2C68.4,-50.5,80.1,-33.3,83.7,-14.5C87.3,4.3,82.9,24.8,71.3,37.6C59.6,50.4,40.9,55.6,22.7,61.9C4.6,68.2,-12.8,75.8,-26.5,71.4C-40.2,67.1,-50.2,50.9,-55.4,35.2C-60.7,19.5,-61.2,4.3,-58.6,-10.2C-55.9,-24.8,-50,-38.7,-39.7,-47.3C-29.4,-56,-14.7,-59.4,2.1,-61.9C18.9,-64.4,37.8,-66,53.1,-58.2Z" transform="translate(100 100)" />
 </svg>
 <div className="title-text"> 
  <span className="title-1stletter">W</span>ORK:</div>
-  </div>
+  </div></Fade>
 
+
+  <Fade bottom delay={50}>    
 <div className="subtext">Some <span className="capstone">capstone projects</span> made within <span className="capstonetime">3 months</span>:</div>
 <div className="subtext">Wanna see more? Check my 
 <a className="gitlink-projects" href="https://github.com/WingedP"><i class="fas fa-link"></i> Github
 </a>!
 
 </div>
+</Fade>
+
 <img className="arrow" src="./images/arrow-icon-1.png"></img>
 </div>
 
@@ -53,7 +60,7 @@ function ProjectLinks(){
     let iconMyweather ="./images/icon-myweather.png";
 
     return(<div className="project-links-container">
-
+<Fade bottom>    
 <div className="project-container-inner">
 
 <Link  className="link-style style1" activeClass="active"  to = "cineplex"  containerId="projects-inner"
@@ -72,6 +79,7 @@ spy= {true} smooth={true} offset={-125} duration= {500}>
     
  </Link>
 </div>
+
 <div  className="project-container-inner">
         
 <Link className="link-style style4"  activeClass="active"  to = "gitowl" containerId="projects-inner"
@@ -93,7 +101,7 @@ spy= {true} smooth={true} offset={-125} duration= {500}>
 
 
   </div>
-
+</Fade>
       
         
         </div>);
@@ -101,7 +109,8 @@ spy= {true} smooth={true} offset={-125} duration= {500}>
 
 function Cineplex(){
     let imagecineplex="./images/cineplex.png";
-    return(
+    return(<Fade left>    
+
 <div id="cineplex" className="cineplex project-function" >
 
 <div className="mobile-screen2">
@@ -149,18 +158,18 @@ I like this project so much I made it twice (actually because the first was a de
     </div>
 
 </div>
-</div>
+</div></Fade>
   )}
 
 function Myweather(){
     let imagemyweather="./images/myweather.png";
-    return(
+    return(<Fade right>    
 <div id="myweather" className="myweather project-function">
 
 <div className="mobile-screen3">
     <div className="mobilescreen-btn"></div>
      <div className="mobilescreen-inner">
-     <img className="mobile-gitowl-img" src="./images/mobile-gitowlscreen.jpg"></img>
+     <img className="mobile-gitowl-img" src="./images/mobile-myweather.png"></img>
 
      </div>
      <div className="mobilescreen-roundbtn"></div>
@@ -209,7 +218,7 @@ I might add air quality later.
 </Tilt> */}
 
 </div>
-
+</Fade>
 
   )}
 
@@ -226,7 +235,7 @@ I might add air quality later.
 
 function Openword(){
     let imageopenword="./images/openword.png";
-    return(
+    return(<Fade right>    
 <div id="openword" className="openword project-function">
 <div className="text">
     <div className="project-name">Openword</div>
@@ -274,16 +283,13 @@ users can exchange their books' collection on this site.
   </Tilt> */}
  
  
-</div>
-        
-
+</div>    
+</Fade>
   )}
-
-
 
 function Gitowl(){
     let imagegitowl="./images/gitowl.png";
-    return(
+    return(<Fade left>    
 <div id="gitowl" className="gitowl project-function">
 
 <div className="mobile-screen">
@@ -334,4 +340,4 @@ I also had fun copying new Facebook's navigation bar.
 </div>
 
 </div>
-  )}
+  </Fade>)}

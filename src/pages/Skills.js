@@ -3,14 +3,17 @@ import './pagestyles/skills.css';
 import { CircularProgressbar, CircularProgressbarWithChildren } from 'react-circular-progressbar';
 import 'react-circular-progressbar/dist/styles.css';
 import VisibilitySensor from "react-visibility-sensor";
+import Fade from 'react-reveal/Fade';
 
 
 export default function Skills() {
     return (<div className="skills">            
 <TitleSection/>
 <Overall/>
-<div className="skills-subtext">3 months of programming since 2020.</div>
+<Fade bottom><div className="skills-subtext">3 months of programming since 2020.</div>
+</Fade>
 <Skillsets/>
+<Fade bottom>
 <div className="skills-subtext final-skillsubtext">
   <div className="skills-subtext-inner">  ... and of course, 
   English's fluency
@@ -24,7 +27,7 @@ export default function Skills() {
   </div>
 
   </div>
-
+  </Fade>
 
 </div>
     )
@@ -34,6 +37,7 @@ export default function Skills() {
 function TitleSection(){
     return(
         <div>
+<Fade bottom>
 <div className="title">
 
 <svg className="marker" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -42,27 +46,33 @@ function TitleSection(){
 
 <div className="title-text"> 
  <span className="title-1stletter">S</span>KILLS:</div>
-  </div>
-<div className="skills-subtext">To create something from nothing, yay!</div>
+  </div></Fade>
+<Fade bottom delay={50}><div className="skills-subtext">To create something from nothing, yay!</div></Fade>
 </div>
     )
 }
 
 function Overall(){
-return(<div className="overall">
-<div className="overall-inner"><div className="skillstextitem">      
+return(
+  <Fade>
+<div className="overall">
+<div className="overall-inner">
+  <div  className="overall-inner2">  
+  <div className="skillstextitem">      
     <i class="fas fa-code skillicons"></i> 
     <div>MERN Stack</div>
 </div>   
-
 <div className="skillstextitem">           
 <i class="fas fa-globe skillicons"></i> 
 <div>
 <div style={{fontWeight:"bold"}}> Frontend: </div>
 Html/Css/Js, ReactJs, Bootstrap </div>
 </div>
+</div>
 
 
+
+<div  className="overall-inner2"> 
 <div className="skillstextitem">           
 <i class="fas fa-cubes skillicons"></i>  
 <div>
@@ -75,11 +85,16 @@ Html/Css/Js, ReactJs, Bootstrap </div>
 <div className="skillstextitem">           
 <i class="fas fa-project-diagram skillicons"></i> 
 More than 10 individual & collaborative projects
-</div> </div>
+</div> 
+</div>
+
+ 
+
+</div>
 
 
 </div>
-    )
+</Fade> )
 }
 
 
@@ -103,12 +118,31 @@ function Skillsets(){
         </div>
 
 <div className="skill-pad">
-<div><img className="skill-icons" src="./images/js.png"></img>
+<div><img className="skill-icons skill-iconsjs" src="./images/js.png"></img>
 <img className="skill-icons" src="./images/react.png"></img>
 </div>
           <VisibilitySensor>
             {({ isVisible }) => {
               const percentage = isVisible ? 80 : 0;
+              return (
+                <CircularProgressbar
+                  value={percentage}
+                  text={`${percentage}%`}
+                />
+              );
+            }}
+          </VisibilitySensor>
+        </div>
+
+
+        <div className="skill-pad">
+<div>
+<img className="skill-icons routericon" src="./images/router.png"></img>
+<img className="skill-icons" src="./images/redux.png"></img>
+</div>
+          <VisibilitySensor>
+            {({ isVisible }) => {
+              const percentage = isVisible ? 70 : 0;
               return (
                 <CircularProgressbar
                   value={percentage}

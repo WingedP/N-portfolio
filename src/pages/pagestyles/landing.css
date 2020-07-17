@@ -8,6 +8,11 @@
 .landing{
   height: fit-content !important;
   }
+.name-section{
+  /* background: red; */
+  width: 100%;
+  margin-bottom: 2rem !important;
+}
 .mylanding{
   padding-top: 3rem;
     display: flex;
@@ -21,9 +26,17 @@
 }
 .landing-subtext{
   padding-left: 1.2rem;
+  flex-direction: column;
+}
+.fading-subtext{
+  display: flex;
 }
 .nhan{
   padding-top: 1.6rem;
+}
+.nguyen{
+  padding-top: 1.6rem;
+
 }
 .name {
 width: 100vw !important;
@@ -51,13 +64,41 @@ padding-left: 1rem;
 
 }
 
+@media only screen and (max-width: 650px){
+  .landing{
+    height: fit-content !important;
+    }
+  .mylanding{
+    padding-top: 3rem;
+      display: flex;
+      height: fit-content !important;
+      width: 100vw !important;
+      flex-direction: column;
+  }
+.name-section{
+  margin-bottom: 5rem;
+
+}
+}
+
+@media only screen and (max-width: 920px){
+  .landing-subtext{
+    padding-left: 1.2rem;
+    flex-direction: column;
+  }
+}
 .frontend{
   padding-left: 2px;
+  padding-right: 2px;
   background: var(--frontend);
   background-clip: text;
   color: transparent;
 }
+.fading-subtext{
+  display: flex;
+}
 .dev{
+  padding-left: 5px;
   background: var(--developer);
   background-clip: text;
   color: transparent;
@@ -74,10 +115,46 @@ padding-left: 1rem;
   position: absolute;
   top: -3rem;
   left: -4rem;
+  transition: 2s;
+  animation: widthheight 5s infinite alternate;
+  animation-timing-function: ease-in-out;
 }
 .landinblob-path{
-  fill: rgb(56, 51, 51);
+  d: path("M46.8,-80.8C60.9,-73,72.7,-60.9,80,-46.7C87.2,-32.5,89.9,-16.3,89.3,-0.4C88.6,15.5,84.5,30.9,75.9,42.9C67.4,54.9,54.4,63.4,41,68.9C27.7,74.4,13.8,77,0.1,76.8C-13.5,76.5,-27.1,73.4,-38.4,66.7C-49.8,60,-59,49.7,-67.5,38C-76.1,26.3,-83.9,13.1,-84.6,-0.4C-85.4,-14,-79.2,-28.1,-70.6,-39.7C-62,-51.2,-51.1,-60.4,-38.9,-69.3C-26.8,-78.3,-13.4,-87,1.5,-89.6C16.4,-92.2,32.8,-88.7,46.8,-80.8Z");
+  fill: url(#header-shape-gradient2);
+  animation: colormorph 5s infinite alternate;
+}
 
+
+
+@keyframes widthheight {
+  0% {
+transform: scale(1); 
+}
+50%{
+  transform: scale(1.03) rotate(10deg); 
+  }
+100%{
+transform: scale(1.01) rotate(20deg); 
+}
+}
+@keyframes colormorph {
+  0% {
+opacity: 1;
+
+  }
+100%{
+opacity: .8;
+}
+
+}
+
+
+
+
+
+.cchevron{
+  transform: translateY(7px);
 }
 .name-section{
     position: relative;
@@ -91,19 +168,19 @@ padding-left: 1rem;
 .openletter2{
     display: flex;
     align-items: center;
+    justify-content: center;
     font-family: 'Reem Kufi', sans-serif;
     background: linear-gradient(to right, #8a2387, #e94057, #f27121);
     border-radius: 10px;
     color: whitesmoke;
     width: fit-content;
+    height: 5rem;
     text-align: center;
     font-size: 4rem;
-    transform: translateY(.4rem);
-    margin-right: .3rem;
+    margin-right: .6rem;
 }
 .openletter3{
-    transform: translateY(.4rem);
-  }
+padding-top: 9px;}
 .openletter{
     position: absolute;
     z-index: -1;
@@ -116,6 +193,10 @@ padding-left: 1rem;
     -webkit-text-stroke-color: black;
     text-shadow: 4px 4px gray;
 }
+@keyframes sectionname-animation {
+  0% {background-position: left}
+  50% {background-position: right}
+}
 .name{
     letter-spacing: 3px;
     position: relative;
@@ -125,8 +206,22 @@ padding-left: 1rem;
 
 }
 
+.testtext:hover{
+  /* animation: sectionname-animation 5s infinite  alternate; */
+  transition: .5s ease;
+  /* background: var(--namegradienthover); */
+  color: rgb(92, 92, 107);
+  /* background-clip: text;
+  color: transparent;
+  background-size: 300%; */
+  /* text-shadow: 2px 2px rgb(103, 107, 122); */
+}
 .landing-name{
     margin-bottom: 2rem;
+}
+.baby{
+  padding-left: 5px;
+  padding-right: 5px;
 }
 .landing-subtext{
     /* font-family: 'Reem Kufi', sans-serif; */
@@ -135,6 +230,7 @@ font-size: 2.2rem;
 color: rgb(129, 129, 129);
 position: relative;
 z-index: 1;
+display: flex;
 
 }
 .avatar-wrapper{
@@ -180,7 +276,7 @@ border-radius: 50%;
     top: 0;
     height: 100%;
     width: 51%;
-    background: black;
+    background: var(--chevroncolor);
   }
   
   .chevron:before {
@@ -308,12 +404,30 @@ left: 2.6rem;
     height: 1.6rem;
     width: 30rem;
 }
+
+
+
+
+#header-shape-gradient{
+  --color-bot: #9c2841;
+  --color-stop: #4e0e57cb;
+  width: 100%;    
+  height: 100%;
+  transition: 4s;
+}
 #header-shape-gradient2{
-    --color-bot: #e163f1;
-    --color-stop: #edcdf1cb;
+    --color-bot2: #c93461;
+    --color-stop2: #6d2f75cb;
     width: 100%;    
     height: 100%;
+    transition: 4s;
+
 }
+
+
+
+
+
 .svg-landing{
     transition: .4s ease;
     width: 0rem;

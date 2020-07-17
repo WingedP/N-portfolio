@@ -6,14 +6,14 @@ export default function Navi() {
     return (
         <div className="navi">
 
-
 <Link className="navilink" activeClass="active"  to = "landing" spy= {true} smooth={true} offset={-125} duration= {500}>
 <span className="navi-openletter2">
 <i class="fas fa-chevron-left"></i>
 <div  className="navi-openletter3">N</div>
-<i class="fas fa-chevron-right"></i></span>
-</Link>
+<i class="fas fa-chevron-right"></i>
 
+</span>
+</Link>
 
 <Link className="navilink link1" activeClass="active"  to = "experiences" spy= {true} smooth={true} offset={-125} duration= {500}>
 <i class="navilink-icon far fa-user-circle"></i></Link>
