@@ -7,21 +7,6 @@ html{
 
 
 
-html, body {
-  /* overflow-x: hidden ; */
-  
-}
-body {  
-    /* background: linear-gradient(to right, #f1eed6, #d3ebd8); */
-/* scroll-behavior: smooth; */
-  /* position: relative !important; */
-}
-/* .portfolio{
-  margin: 0px !important;
-  padding: 0px !important;
-} */
-
-
 body::-webkit-scrollbar{
   background: linear-gradient(to right, #d3ebd8, #d3ebd8);
   width: .8%;

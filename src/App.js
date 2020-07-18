@@ -45,10 +45,12 @@ function App() {
       <Suspense fallback={<Loader2/>}>
         <Experiences/>
         <Projects/>
-        </Suspense>
-
       <Skills/>
       <Contact/>
+
+        </Suspense>
+
+
     </div>
   );
 }
