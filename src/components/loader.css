@@ -6,20 +6,24 @@ display: flex;
 flex-direction: column;
 align-items: center;
 justify-content: center;
-width: 100%;
+    width: 100%;
 height: 100vh;
 }
 .loader-img{
 width: 3rem;
 }
-
+.loader-inner{
+    align-items: center;
+    margin-bottom: 8rem;
+}
 
 .hellothere{
     display: flex;
     font-family: 'Nothing You Could Do', cursive;
     font-size: 70px;
 }
-.openletter2{
+.loader-openletter2{
+    margin-left: 6rem;
     display: flex;
     align-items: center;
     font-family: 'Reem Kufi', sans-serif;
@@ -32,6 +36,6 @@ width: 3rem;
     transform: translateY(.4rem);
     margin-right: .3rem;
 }
-.openletter3{
+.loader-openletter3{
     transform: translateY(.4rem);
   }

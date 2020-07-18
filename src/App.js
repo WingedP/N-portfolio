@@ -7,13 +7,15 @@ import {Route, Switch } from "react-router-dom";
 import Navi from './components/Navi';
 import Loader from './components/Loader';
 import Loader2 from './components/Loader2';
+import Skills from './pages/Skills';
+import Contact from './pages/Contact';
+
 
 // import Landing from './pages/Landing';
-import Skills from './pages/Skills';
 // import Projects from './pages/Projects';
-import Contact from './pages/Contact';
 // import Experiences from './pages/Experiences';
 // const Landing = React.lazy(()=>import("./pages/Landing"));
+
 const Landing = React.lazy(() => {
   return Promise.all([import("./pages/Landing"),
   new Promise(resolve => setTimeout(resolve, 1600))
@@ -40,11 +42,9 @@ function App() {
     <div className="portfolio">
       <Navi/>
       <Suspense fallback={<Loader/>}><Landing/></Suspense>
-      
       <Suspense fallback={<Loader2/>}>
         <Experiences/>
         <Projects/>
-
         </Suspense>
 
       <Skills/>
