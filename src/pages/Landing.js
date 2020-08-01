@@ -14,7 +14,7 @@ export default function Landing() {
 
 <div className="landing-name">
 <Fade bottom>
-<div className="name nhan">
+<div id="cursorreact" className="name nhan">
 
   Nh
   <span className="aletter"><div>a</div><i class="symbolup fas fa-chevron-up"></i></span>

@@ -4,6 +4,7 @@
 
 
 
+
 @media only screen and (max-width: 400px) {
 .landing{
   height: fit-content !important;
@@ -153,6 +154,7 @@ opacity: .8;
 
 
 
+
 .cchevron{
   transform: translateY(7px);
 }
@@ -206,6 +208,16 @@ padding-top: 9px;}
     font-family: 'Quattrocento', serif;
 
 }
+
+.name:hover{
+  cursor: default;
+}
+.landing-subtext:hover{
+  cursor: default;
+
+}
+
+
 
 .testtext:hover{
   /* animation: sectionname-animation 5s infinite  alternate; */

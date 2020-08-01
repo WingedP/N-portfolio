@@ -6,6 +6,10 @@ html{
 }
 
 
+body{
+  overflow-x: hidden;
+
+}
 
 body::-webkit-scrollbar{
   background: linear-gradient(to right, #d3ebd8, #d3ebd8);
@@ -19,3 +23,5 @@ body::-webkit-scrollbar-thumb{
 body::-webkit-scrollbar-track{
   background-color: rgba(14, 12, 12, 0);
 }
+
+
